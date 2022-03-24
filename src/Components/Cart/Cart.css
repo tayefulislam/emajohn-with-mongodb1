@@ -1,0 +1,6 @@
+.cart{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}
