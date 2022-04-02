@@ -21,7 +21,7 @@ const addToDb = id => {
 }
 
 
-const getStoredProduct = () => {
+const getStoredCart = () => {
     let shoppingCart = {};
 
     //get the shopping cart from local storage
@@ -51,7 +51,7 @@ const deleteShoppingCart = () => {
 
 export {
     addToDb,
-    getStoredProduct,
+    getStoredCart,
     removeFromDb,
     deleteShoppingCart
 }
