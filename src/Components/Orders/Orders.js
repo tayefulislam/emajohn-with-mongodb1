@@ -25,7 +25,7 @@ const Orders = () => {
     return (
         <div className='shop-container'>
 
-            <div className=''>
+            <div className='review-item-container'>
 
                 {
                     cart.map(product => <ReviewCart
