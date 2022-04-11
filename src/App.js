@@ -4,6 +4,7 @@ import './App.css';
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import Inventory from './Components/Inventory/Inventory';
+import Login from './Components/Login/Login';
 import Orders from './Components/Orders/Orders';
 import Shop from './Components/Shop/Shop';
 
@@ -21,6 +22,7 @@ function App() {
 
         <Route path='/inventory' element={<Inventory></Inventory>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
 
     </div>
