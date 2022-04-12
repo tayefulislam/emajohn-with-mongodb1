@@ -17,6 +17,8 @@
  * 
  * 10) recreate a requireauth and setup component 
  * 
+ * 11) wrap component in requieed auths
+ * 
  * 
  * 
  * 
