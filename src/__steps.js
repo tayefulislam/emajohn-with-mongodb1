@@ -15,6 +15,8 @@
  * 
  * 9)useSignInWithEmailAndPassword and redirect (navigate)home page if user is ture 
  * 
+ * 10) recreate a requireauth and setup component 
+ * 
  * 
  * 
  * 
