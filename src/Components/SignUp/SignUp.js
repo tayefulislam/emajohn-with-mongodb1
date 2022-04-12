@@ -1,5 +1,8 @@
+// import { faArrowUpWideShort } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init.js'
 
 const SignUp = () => {
 
@@ -8,11 +11,19 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
 
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+
+    const navigate = useNavigate();
+
     const handleEmailBlur = event => { setEmail(event.target.value); };
 
     const handlePasswordBlur = event => { setPassword(event.target.value); };
 
     const handleConfirmPasswordBlur = event => { setConfirmPassword(event.target.value); };
+
+    if (user) {
+        navigate('/')
+    }
 
 
     const handleCreateUser = (event) => {
@@ -22,6 +33,13 @@ const SignUp = () => {
             setError("Password and Confirm password did not match")
             return;
         }
+
+        else {
+            createUserWithEmailAndPassword(email, password)
+
+        }
+
+
     }
 
 

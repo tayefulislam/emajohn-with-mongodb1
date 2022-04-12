@@ -11,6 +11,12 @@
  * npm install --save react-firebase-hooks
  * https://github.com/CSFrequency/react-firebase-hooks
  * 
+ * 8) useCreateUserWithEmailAndPassword and redirect (navigate)home page if user is true
+ * 
+ * 9)useSignInWithEmailAndPassword and redirect (navigate)home page if user is ture 
+ * 
+ * 
+ * 
  * 
  * 
  * 
