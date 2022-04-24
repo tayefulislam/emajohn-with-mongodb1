@@ -10,7 +10,7 @@ const Orders = () => {
 
     const [products, setPrducts] = useProduct();
 
-    const [cart, setCart] = useCart(products)
+    const [cart, setCart] = useCart()
 
     const handleRemoveItem = (product) => {
 
