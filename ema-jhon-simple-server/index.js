@@ -38,9 +38,22 @@ async function run() {
 
             const result = await corsur.toArray()
 
+            // const result = await corsur.limit(40).toArray()
+            // get limit items
+
+
             res.send(result)
 
 
+        })
+
+
+        app.get('/pageCount', async (req, res) => {
+            const query = {}
+            const cursor = productCollection.find(query)
+            const count = await cursor.count()
+
+            res.send({ count })
         })
 
 
